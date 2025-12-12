@@ -172,6 +172,19 @@ wheels = [
 ]
 
 [[package]]
+name = "asyncssh"
+version = "2.21.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cryptography" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6b/b8/065c20bb5c9b8991648c0f25b13e445b4f51556cc3fdd0ad13ce4787c156/asyncssh-2.21.1.tar.gz", hash = "sha256:9943802955e2131536c2b1e71aacc68f56973a399937ed0b725086d7461c990c", size = 540515, upload-time = "2025-09-28T16:36:19.468Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0e/89/4a9a61bc120ca68bce92b0ea176ddc0e550e58c60ab820603bd5246e7261/asyncssh-2.21.1-py3-none-any.whl", hash = "sha256:f218f9f303c78df6627d0646835e04039a156d15e174ad63c058d62de61e1968", size = 375529, upload-time = "2025-09-28T16:36:17.68Z" },
+]
+
+[[package]]
 name = "attrs"
 version = "25.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -903,7 +916,7 @@ requires-dist = [
     { name = "pillow", specifier = "==12.0.0" },
     { name = "prompt-toolkit", specifier = "==3.0.52" },
     { name = "pydantic", specifier = "==2.12.5" },
-    { name = "pykaos", specifier = "==0.4.0" },
+    { name = "pykaos", specifier = "==0.5.0" },
     { name = "pyyaml", specifier = "==6.0.3" },
     { name = "rich", specifier = "==14.2.0" },
     { name = "ripgrepy", specifier = "==2.2.0" },
@@ -1689,14 +1702,15 @@ wheels = [
 
 [[package]]
 name = "pykaos"
-version = "0.4.0"
+version = "0.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiofiles" },
+    { name = "asyncssh" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0f/f9/ced0c3f359f10e4ef97eb49b806bc9417721ae012e4d759ce81c32468b09/pykaos-0.4.0.tar.gz", hash = "sha256:83109ee1454dd931063f3a8c0bb78c8ca9639f7d083b94313755f2136c37e390", size = 4728, upload-time = "2025-12-06T07:18:04.825Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/32/bb/a5bfc8190f4d05e67725746bd7496972f08982d0e0eae1b0a1dd231b2ac6/pykaos-0.5.0.tar.gz", hash = "sha256:675a89e4fa1baac90883f1117aab6c90d252be3aa581794defc6117f05d2b785", size = 7178, upload-time = "2025-12-12T05:28:46.626Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f5/79/fcc47c993606d211a4f02dc8202a39f9cb756668989689e8ee9dcd5acebe/pykaos-0.4.0-py3-none-any.whl", hash = "sha256:3da34893b08d509fad13fe33514e67260a1bba58a087c14f0da08cadcc7b9039", size = 6720, upload-time = "2025-12-06T07:18:03.728Z" },
+    { url = "https://files.pythonhosted.org/packages/b1/8a/941af4e229bbc6f196c25aa8483d7663554b30238c8f9090b21428fd38e7/pykaos-0.5.0-py3-none-any.whl", hash = "sha256:7f56fd44035062d2202a8ee36ca8980b7db69f141bab973d8f692a1bff73b6b6", size = 10061, upload-time = "2025-12-12T05:28:45.897Z" },
 ]
 
 [[package]]
