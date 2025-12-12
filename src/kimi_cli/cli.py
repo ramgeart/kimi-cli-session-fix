@@ -1,14 +1,15 @@
 from __future__ import annotations
-
 import asyncio
 import json
 import sys
 from pathlib import Path
 from typing import Annotated, Literal
-
 import typer
-
 from kimi_cli.constant import VERSION
+from kimi_cli.cli_session import session_app
+
+
+
 
 
 class Reload(Exception):
@@ -377,3 +378,5 @@ if __name__ == "__main__":
         sys.modules["kimi_cli.cli"] = sys.modules[__name__]
 
     sys.exit(cli())
+# Register session subcommand
+cli.add_typer(session_app, name="session")
